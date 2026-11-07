@@ -4,6 +4,8 @@ Juego en español para navegador, teléfono o computadora. Centro y personajes f
 
 Abre `index.html` con doble clic. No necesita servidor, instalación ni conexión. En teléfono, abre el archivo con un navegador que permita HTML local. Solo los enlaces de Fuentes requieren internet.
 
+Al entrar aparece una guía de tres pasos. Antes de cada estación hay un tutorial con objetivo, controles, pasos y una práctica breve. «Cómo jugar» repite la bienvenida y «Ayuda de esta estación» permite consultar los pasos durante la actividad.
+
 Incluye seis días, tres niveles, controles táctiles y de teclado, chequeos previos, botón de malestar sin penalización, 30 preguntas de debrief con explicaciones, siete mitos, clasificador accesible por selección o arrastre, comparador, glosario y diploma imprimible. El día acuático se completa por observación en niveles básicos. El nivel avanzado usa casos y aprobación médica ficticios; no pide datos de salud ni habilita buceo real.
 
 El progreso y el alias se guardan solo en el navegador cuando permite almacenamiento local. En algunos navegadores el almacenamiento de archivos locales no está disponible. «Borrar progreso local» permite reiniciar.
@@ -38,4 +40,4 @@ Los tiempos, recorridos, controles y reglas cualitativas de ensayo son decisione
 
 ## Verificación realizada
 
-Se ejecutaron pruebas de sintaxis, física e interacción DOM para las seis estaciones, 30 respuestas de debrief, desbloqueo, parada sin penalización, misión avanzada, clima, revisión médica ficticia, diploma, extras y referencias. La inspección visual en navegador no se pudo completar: la herramienta de vista previa bloqueó archivos `file://`. El diseño usa viewport móvil, controles táctiles, navegación por teclado y disposición responsive, pero queda pendiente la revisión visual en un teléfono real.
+Se ejecutaron pruebas de sintaxis, física e interacción DOM para las seis estaciones, 30 respuestas de debrief, desbloqueo, parada sin penalización, misión avanzada, clima, revisión médica ficticia, diploma, extras y referencias. La bienvenida del tutorial también se comprobó visualmente en una vista estrecha del navegador local HTTP. La herramienta bloqueó la apertura directa de `file://`; las pruebas DOM sí usan ese esquema. El diseño usa viewport móvil, controles táctiles, navegación por teclado y disposición responsive. Queda pendiente una revisión completa en un teléfono real.

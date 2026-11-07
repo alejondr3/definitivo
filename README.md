@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme/entrada.gif" alt="Órbita. La ciencia se juega. Banner animado con anillos de orientación." width="100%">
+  <img src="assets/readme/entrada.gif" alt="Órbita. La ciencia se juega. Portada animada con equipos sólidos renderizados en 3D." width="100%">
 </p>
 
 <p align="center">
@@ -20,25 +20,25 @@
 
 ## El juego en acción
 
-<p align="center"><img src="assets/orbita-en-movimiento.gif" alt="Escenas animadas del juego: MAT, silla lunar, trayectorias 5DF y ensayo de ingeniería." width="800"></p>
+<p align="center"><img src="assets/pulso-perspectiva.gif" alt="Circuito de datos en perspectiva: paquetes que se acercan, cambios de carril y órdenes encadenadas." width="800"></p>
 
 <p align="center"><sub>Escenas renderizadas con el código del juego. Modelos educativos idealizados.</sub></p>
 
 ### Nuevo: sesión PULSO
 
-Muévete entre terminales, retén secuencias, captura señales móviles, encuentra discrepancias y conecta pares. Encadena aciertos para mantener el flujo. En **Práctica rápida** puedes entrar directamente, sin alterar los días completados.
+Avanza por un circuito de datos en perspectiva. Repite y confirma las órdenes sobre la escena, cambia de carril y recoge el paquete solicitado. Encadena aciertos mientras el escenario continúa avanzando. En **Práctica rápida** puedes entrar directamente, sin alterar los días completados.
 
 Activa **Base rítmica** para escuchar percusión y bajo originales sintetizados en el navegador. El audio es opcional y se detiene al pausar o avisar malestar. La respiración y la física de los aparatos mantienen sus reglas.
 
 <details><summary><strong>Ver el circuito PULSO</strong></summary>
 
-![Misión PULSO: tablero interactivo, objetivos y contador de coordinación](assets/mision-pulso.png)
+![Misión PULSO: escenario en perspectiva, paquetes y cambios de carril](assets/pulso-perspectiva.png)
 
 </details>
 
 ## Tu ruta de seis días
 
-<p align="center"><img src="assets/readme/retos.svg" alt="Seis retos: orientación MAT, saltos con arnés, impulso 5DF, comunicación en equipo, diseño de un cohete virtual y observación del arrastre del agua." width="100%"></p>
+<p align="center"><img src="assets/solid/catalogo.png" alt="Seis equipos: entrenador MAT, silla lunar, 5DF, centro de control, prototipo virtual y entrenador acuático." width="100%"></p>
 
 **Juega a tu ritmo.** Elige Campamento, Academia o Academia Avanzada. Sigue las pistas, colecciona seis insignias educativas y vuelve a intentar las veces que quieras. El sonido es opcional y el movimiento se puede reducir.
 
@@ -55,7 +55,7 @@ En teléfono, abre el archivo con un navegador que admita HTML local. El juego n
 
 ![Portada del campamento](assets/campamento.png)
 
-![Reto MAT, con controles y guía de respiración](assets/reto-mat.png)
+![Nuevo render conceptual del entrenador de anillos](assets/solid/estacion-0.png)
 
 [Ver controles y ayuda completa →](docs/GUIA.md#controles-que-se-aprenden-jugando)
 
@@ -86,7 +86,7 @@ Estas comprobaciones verifican el software, no un aparato real ni la aptitud de 
 
 Eres un participante educativo. El diploma final es una graduación del campamento, no una certificación de vuelo. Cada estación distingue qué representa y qué deja fuera: vacío, radiación, microgravedad prolongada y dinámica completa de una nave no se reproducen.
 
-El contenido sigue el informe proporcionado, con fecha de corte 7 de noviembre de 2026. Las 20 referencias están en Fuentes, dentro del juego. El arte es SVG/canvas creado para el proyecto, sin imágenes de modelos generativos de imagen.
+El contenido sigue el informe proporcionado, con fecha de corte 7 de noviembre de 2026. Las 20 referencias están en Fuentes, dentro del juego. Los equipos son renders propios de geometría 3D, con materiales e iluminación calculados en código. El circuito se dibuja en perspectiva durante el juego; no se usaron generadores de imagen.
 
 En el caso real, Space Camp lo opera el U.S. Space and Rocket Center en Huntsville, centro oficial de visitantes de NASA Marshall, pero **no parte de la NASA**. Órbita no representa a esas entidades.
 

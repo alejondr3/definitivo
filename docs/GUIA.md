@@ -14,7 +14,7 @@ La primera vez aparece una guía breve. Antes de cada reto puedes practicar una 
 
 ## Míralo en movimiento
 
-<p align="center"><img src="../assets/orbita-en-movimiento.gif" alt="Animación de las escenas del juego: anillos MAT, salto con arnés, trayectoria 5DF y ensayo del cohete virtual." width="720"></p>
+<p align="center"><img src="../assets/pulso-perspectiva.gif" alt="Animación de las escenas del juego: anillos MAT, salto con arnés, trayectoria 5DF y ensayo del cohete virtual." width="720"></p>
 
 El GIF se renderizó con las mismas funciones canvas del juego. Muestra modelos educativos idealizados, no prestaciones de aparatos reales.
 
@@ -22,7 +22,7 @@ El GIF se renderizó con las mismas funciones canvas del juego. Muestra modelos 
 
 ![Mapa del campamento con ilustración original, progreso y acceso a los retos](../assets/campamento.png)
 
-![Escena MAT con eje destacado, apoyos y guía de respiración](../assets/reto-mat.png)
+![Escena MAT con eje destacado, apoyos y guía de respiración](../assets/solid/estacion-0.png)
 
 </details>
 
@@ -33,7 +33,7 @@ El GIF se renderizó con las mismas funciones canvas del juego. Muestra modelos 
 | **01 · MAT** | Mantén los apoyos, reconoce el eje destacado y sigue el círculo de respiración. | Cabeceo, alabeo y guiñada. Atender instrucciones no equivale a pilotar una nave. |
 | **02 · Silla lunar** | Salta, mira tu estela y frena dentro de la baliza. | El peso aparente baja a un sexto; la masa y la inercia siguen iguales. |
 | **03 · 5DF** | Da impulsos, sigue tu trayectoria, ajusta una pieza y regresa. | Un impulso inicia el movimiento y otro lo cambia. La vertical está bloqueada. |
-| **04 · Equipo** | Alterna roles, recorre terminales, retén secuencias, captura señales móviles y contrasta registros. | Emitir, repetir, confirmar y ejecutar: comunicación cerrada. |
+| **04 · Equipo** | Alterna roles, cambia de carril y recupera paquetes siguiendo órdenes confirmadas. | Emitir, repetir, confirmar y ejecutar: comunicación cerrada. |
 | **05 · Ingeniería** | Edita las aletas con deslizadores, observa un ensayo animado y vuelve a probar. | Definir → idear → construir → probar → observar → mejorar. |
 | **06 · Agua** | Compara dos movimientos tras el mismo impulso, con y sin arrastre. | El agua frena. Un entrenador acuático no equivale a una caminata espacial. |
 
@@ -56,7 +56,7 @@ Las señales, registros y reglas del cohete son rompecabezas del juego, no proce
 | MAT | Un dedo mantiene **Apoyos**; otro toca eje y exhalación. | Mantener **A + P** y elegir los botones. |
 | Silla lunar | Mantener caminar o frenar; tocar saltar. | **← →**, **espacio**, **B**. |
 | 5DF | Un toque por impulso; el opuesto contrarresta. **+ / −** cambian el giro. | Flechas: un impulso por pulsación. |
-| Misión PULSO | Tocar la terminal y resolver la consola. | WASD / flechas, E abrir/transmitir, R repetir, C confirmar, 1–4 elegir y espacio capturar. |
+| Misión PULSO | Tocar los botones de carril o el tercio de la escena correspondiente. | A/← izquierda, D/→ derecha, S/↓ centro; R repite y C confirma. |
 | Ingeniería | Ajustar aletas y Probar diseño ahora; justificar y volver a ensayar. | Tabulador, Enter y deslizadores nativos. |
 
 **¿Te pasaste de la baliza?** Frena y vuelve a probar. **¿No quieres usar un aparato?** Continúa como observador. No hay penalización por intentos, observación o malestar.
@@ -104,7 +104,7 @@ Abre `http://127.0.0.1:8765/`. Este servidor solo sirve el archivo; el juego no 
 
 ## Arte y fuentes
 
-La dirección visual combina consola verde, ilustración vectorial y sprites dibujados en código. **El arte incluido no usa imágenes de modelos generativos de imagen ni material de bancos de imágenes.** La portada, las seis ilustraciones y las escenas se construyen con SVG/canvas propios. Los archivos de `../assets/` presentan el repositorio; el juego no necesita descargarlos.
+La dirección visual combina consola de control, renders sólidos de equipos y un corredor dibujado en perspectiva. **El arte incluido no usa imágenes de modelos generativos de imagen ni material de bancos de imágenes.** Los seis equipos se renderizaron desde geometría 3D con iluminación calculada en código. Las imágenes PNG están embebidas en el HTML y la escena de acción se dibuja en tiempo real con canvas. Los archivos de `../assets/` presentan el repositorio; el juego no necesita descargarlos.
 
 El contenido histórico, los límites y las condiciones siguen el informe proporcionado **«Entrenadores y simuladores para jóvenes astronautas»**, con fecha de corte **7 de noviembre de 2026**. Sus **20 referencias con enlaces originales** están en Fuentes. Las siete afirmaciones del quiz corresponden a la sección 11 del informe. Los programas reales pueden cambiar; se presentan según esa base documental.
 
@@ -116,10 +116,12 @@ El progreso, las preferencias y el alias se guardan solo en el navegador cuando 
 
 ## Sesión PULSO
 
-El día 4 usa un tablero ficticio con cuatro tipos de tarea: memoria de secuencias, captura de una señal móvil, discrepancias entre indicador y registro y conexiones por pares. Campamento tiene cuatro tareas; Academia, cinco; Avanzada, siete. Cada terminal conserva la comunicación cerrada: emitir, repetir, confirmar y actuar.
+El día 4 usa un circuito de datos en perspectiva. Su avance es una visualización de juego: no representa un vuelo, dinámica orbital, una nave completa ni una prueba de aptitud. Campamento tiene cuatro órdenes; Academia, cinco; Avanzada, siete.
 
-El movimiento de la ficha es un control del tablero, no un modelo de dinámica de nave. Los combos representan aciertos en el juego, no aptitud para una misión real. Los puntos ganados se conservan al reintentar. Si se agota la ventana didáctica, control concede más tiempo.
+Cada orden contiene tres paquetes a verificar. Control emite la secuencia, la tripulación la repite con R y control confirma con C. Luego cambias entre tres carriles para recoger los paquetes pedidos. El radar muestra los próximos paquetes. Las fases incluyen listas, señales, un contraste ficticio de panel y registro y pares de conexión; son abstracciones de tareas y comunicación, no procedimientos de vuelo.
 
-Práctica rápida permite explorar PULSO sin modificar los días completados. Al terminar, sus cinco preguntas son educativas y no acreditan el día del campamento. La base rítmica es original, opcional y funciona sin conexión. Pausar, cambiar de pantalla o avisar malestar detiene sus voces activas.
+Los aciertos encadenan flujo. Un paquete incorrecto reinicia ese flujo, pero no resta puntos ganados. Si se agota la ventana didáctica, control concede más tiempo. La pausa y Avisar malestar detienen el tiempo y la base rítmica.
 
-El MAT ahora pide tres señales de eje por ronda, manteniendo un ciclo tranquilo de respiración de ocho segundos. No se acelera la respiración para seguir la música. Ingeniería ofrece Probar diseño ahora para registrar las fases preparatorias y pasar directamente al ensayo cualitativo.
+Jugar circuito PULSO abre una práctica rápida, sin modificar los días completados. En la ruta del campamento, la misión y sus cinco preguntas sí forman parte del día 4. La base rítmica es original, opcional, funciona sin conexión y añade percusión, bajo y acordes sintetizados en el dispositivo.
+
+El MAT pide tres señales de eje por ronda con un ciclo tranquilo de respiración de ocho segundos. No se acelera la respiración para seguir la música. Sus anillos se muestran ahora como superficies sólidas sombreadas. Ingeniería ofrece Probar diseño ahora para registrar las fases preparatorias y pasar directamente al ensayo cualitativo.

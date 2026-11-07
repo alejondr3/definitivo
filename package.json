@@ -1,0 +1,13 @@
+{
+  "name": "orbita-campamento-educativo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Juego educativo offline en un único HTML con ilustración SVG y retos canvas.",
+  "scripts": {
+    "test": "node --test tests/physics.test.cjs",
+    "test:interaction": "node tests/interactions.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}

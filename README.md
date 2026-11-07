@@ -16,13 +16,25 @@
   <a href="docs/GUIA.md">Leer la guía</a>
 </p>
 
-<p align="center"><strong>Tu curiosidad tiene los controles.</strong><br>Salta con un arnés. Contrarresta un impulso. Resuelve una anomalía en equipo.<br>Cierra cada reto con una idea nueva en tu bitácora.</p>
+<p align="center"><strong>Tu curiosidad tiene los controles.</strong><br>Salta con un arnés. Contrarresta un impulso. Entra al circuito PULSO.<br>Cierra cada reto con una idea nueva en tu bitácora.</p>
 
 ## El juego en acción
 
 <p align="center"><img src="assets/orbita-en-movimiento.gif" alt="Escenas animadas del juego: MAT, silla lunar, trayectorias 5DF y ensayo de ingeniería." width="800"></p>
 
 <p align="center"><sub>Escenas renderizadas con el código del juego. Modelos educativos idealizados.</sub></p>
+
+### Nuevo: sesión PULSO
+
+Muévete entre terminales, retén secuencias, captura señales móviles, encuentra discrepancias y conecta pares. Encadena aciertos para mantener el flujo. En **Práctica rápida** puedes entrar directamente, sin alterar los días completados.
+
+Activa **Base rítmica** para escuchar percusión y bajo originales sintetizados en el navegador. El audio es opcional y se detiene al pausar o avisar malestar. La respiración y la física de los aparatos mantienen sus reglas.
+
+<details><summary><strong>Ver el circuito PULSO</strong></summary>
+
+![Misión PULSO: tablero interactivo, objetivos y contador de coordinación](assets/mision-pulso.png)
+
+</details>
 
 ## Tu ruta de seis días
 
@@ -52,10 +64,10 @@ En teléfono, abre el archivo con un navegador que admita HTML local. El juego n
 <details>
 <summary><strong>Cómo se comprueba la física</strong></summary>
 
-Las 11 verificaciones integradas y los 10 casos externos comprueban el modelo educativo: masa constante, peso aparente 1/6, descarga 5/6, impulso y vertical bloqueada. También hay 20 grupos de pruebas de interacción.
+Las 11 verificaciones integradas y los 10 casos externos comprueban el modelo educativo: masa constante, peso aparente 1/6, descarga 5/6, impulso y vertical bloqueada. Además, hay dos pruebas de control del sintetizador y 22 grupos de pruebas de interacción.
 
 ```sh
-node --test tests/physics.test.cjs
+node --test tests/physics.test.cjs tests/audio.test.cjs
 ```
 
 Para las pruebas de interacción:

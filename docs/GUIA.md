@@ -33,7 +33,7 @@ El GIF se renderizó con las mismas funciones canvas del juego. Muestra modelos 
 | **01 · MAT** | Mantén los apoyos, reconoce el eje destacado y sigue el círculo de respiración. | Cabeceo, alabeo y guiñada. Atender instrucciones no equivale a pilotar una nave. |
 | **02 · Silla lunar** | Salta, mira tu estela y frena dentro de la baliza. | El peso aparente baja a un sexto; la masa y la inercia siguen iguales. |
 | **03 · 5DF** | Da impulsos, sigue tu trayectoria, ajusta una pieza y regresa. | Un impulso inicia el movimiento y otro lo cambia. La vertical está bloqueada. |
-| **04 · Equipo** | Alterna roles, alinea una señal y encuentra un indicador que contradice al registro. | Emitir, repetir, confirmar y ejecutar: comunicación cerrada. |
+| **04 · Equipo** | Alterna roles, recorre terminales, retén secuencias, captura señales móviles y contrasta registros. | Emitir, repetir, confirmar y ejecutar: comunicación cerrada. |
 | **05 · Ingeniería** | Edita las aletas con deslizadores, observa un ensayo animado y vuelve a probar. | Definir → idear → construir → probar → observar → mejorar. |
 | **06 · Agua** | Compara dos movimientos tras el mismo impulso, con y sin arrastre. | El agua frena. Un entrenador acuático no equivale a una caminata espacial. |
 
@@ -44,7 +44,7 @@ Las señales, registros y reglas del cohete son rompecabezas del juego, no proce
 - **Objetivos que responden:** pasos visibles y pistas que cambian con tu situación.
 - **Una bitácora propia:** seis insignias educativas y 25 puntos de aprendizaje por cada día cerrado. No se premia tolerar malestar ni se compara la aptitud de jugadores.
 - **Tres niveles:** Campamento (9+), Academia y Academia Avanzada. El avanzado amplía la misión y habilita la escena acuática con aprobación médica ficticia.
-- **Sonido a tu elección:** señales suaves, apagadas al comenzar.
+- **Sonido a tu elección:** efectos y base rítmica originales opcionales. La percusión y el bajo se sintetizan en el dispositivo; no se incluyen grabaciones comerciales.
 - **Movimiento regulable:** ilustraciones animadas y un modo reducido; se respeta la preferencia del sistema.
 - **Más para explorar:** siete mitos del informe, clasificador por arrastre o selección, comparador profesional, glosario y 30 preguntas con explicación.
 - **Un cierre para recordar:** diploma educativo imprimible al cerrar las seis reflexiones, jugando o como observador.
@@ -56,7 +56,8 @@ Las señales, registros y reglas del cohete son rompecabezas del juego, no proce
 | MAT | Un dedo mantiene **Apoyos**; otro toca eje y exhalación. | Mantener **A + P** y elegir los botones. |
 | Silla lunar | Mantener caminar o frenar; tocar saltar. | **← →**, **espacio**, **B**. |
 | 5DF | Un toque por impulso; el opuesto contrarresta. **+ / −** cambian el giro. | Flechas: un impulso por pulsación. |
-| Misión e ingeniería | Tocar, elegir y deslizar según la pista. | Tabulador, Enter y controles nativos. |
+| Misión PULSO | Tocar la terminal y resolver la consola. | WASD / flechas, E abrir/transmitir, R repetir, C confirmar, 1–4 elegir y espacio capturar. |
+| Ingeniería | Ajustar aletas y Probar diseño ahora; justificar y volver a ensayar. | Tabulador, Enter y deslizadores nativos. |
 
 **¿Te pasaste de la baliza?** Frena y vuelve a probar. **¿No quieres usar un aparato?** Continúa como observador. No hay penalización por intentos, observación o malestar.
 
@@ -75,7 +76,7 @@ En el caso real, Space Camp lo opera el U.S. Space and Rocket Center en Huntsvil
 En el juego, abre **Pruebas físicas** para ejecutar 11 verificaciones. Con Node.js 18 o posterior, sin instalar dependencias:
 
 ```sh
-node --test tests/physics.test.cjs
+node --test tests/physics.test.cjs tests/audio.test.cjs
 ```
 
 Para ejecutar también las pruebas de interacción (requieren instalar la dependencia de desarrollo `jsdom`):
@@ -112,3 +113,13 @@ El progreso, las preferencias y el alias se guardan solo en el navegador cuando 
 ---
 
 <p align="center"><strong>Observa. Prueba. Vuelve a intentarlo.</strong><br><sub>La curiosidad sí tiene lugar en la consola.</sub></p>
+
+## Sesión PULSO
+
+El día 4 usa un tablero ficticio con cuatro tipos de tarea: memoria de secuencias, captura de una señal móvil, discrepancias entre indicador y registro y conexiones por pares. Campamento tiene cuatro tareas; Academia, cinco; Avanzada, siete. Cada terminal conserva la comunicación cerrada: emitir, repetir, confirmar y actuar.
+
+El movimiento de la ficha es un control del tablero, no un modelo de dinámica de nave. Los combos representan aciertos en el juego, no aptitud para una misión real. Los puntos ganados se conservan al reintentar. Si se agota la ventana didáctica, control concede más tiempo.
+
+Práctica rápida permite explorar PULSO sin modificar los días completados. Al terminar, sus cinco preguntas son educativas y no acreditan el día del campamento. La base rítmica es original, opcional y funciona sin conexión. Pausar, cambiar de pantalla o avisar malestar detiene sus voces activas.
+
+El MAT ahora pide tres señales de eje por ronda, manteniendo un ciclo tranquilo de respiración de ocho segundos. No se acelera la respiración para seguir la música. Ingeniería ofrece Probar diseño ahora para registrar las fases preparatorias y pasar directamente al ensayo cualitativo.

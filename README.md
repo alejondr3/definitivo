@@ -24,24 +24,24 @@
 
 <p align="center"><sub>Escenas renderizadas con el código del juego. Modelos educativos idealizados.</sub></p>
 
-### Nuevo: seis circuitos en perspectiva
+### Cinco juegos nuevos, cada uno con su propia mecánica
 
-![Observatorio de arrastre con radar, controles y circuito en perspectiva](assets/circuitos-perspectiva.png)
+PULSO conserva su circuito en perspectiva. Los otros cinco días tienen escenarios, objetivos y controles diferentes:
 
-El estilo de PULSO se extiende a todos los días. Cinco juegos nuevos comparten el escenario en perspectiva, el radar, las rachas y los controles de teclado y pantalla:
-
-| Reto | Mecánica del circuito |
+| Juego | Cómo se juega |
 | --- | --- |
-| Atención en tres ejes | Reconocer cabeceo, alabeo y guiñada y confirmar la señal solicitada. |
-| Ruta lunar | Elegir la baliza y saltar al aparecer **AHORA**. |
-| Entrega 5DF | Aplicar impulsos laterales, contrarrestarlos y llegar con velocidad baja. |
-| PULSO | Repetir, confirmar y ejecutar órdenes recogiendo paquetes. |
-| Ingeniería | Registrar el primer ensayo inclinado, elegir simetría y probar la mejora. |
-| Observatorio de agua | Comparar dos marcadores con el mismo impulso y registrar el arrastre, sin buceo. |
+| **GIRO** | Gira el entrenador, alinea la orientación con el arco del operador y bloquea cinco posiciones. |
+| **TRAVESÍA** | Cruza un valle lunar de plataformas. Salta los huecos, frena y activa tres balizas que sirven como checkpoints. |
+| **DERIVA** | Mueve libremente un vehículo en un taller visto desde arriba. Usa impulsos, evita estructuras, orienta los módulos y acopla tres entregas. |
+| **PULSO** | Repite, confirma y ejecuta órdenes recogiendo paquetes en su circuito original. |
+| **DESPEGUE** | Construye las aletas de un prototipo; después pilótalo entre tres anillos y llega a la plataforma con velocidad lateral baja. La asimetría introduce deriva. |
+| **ABISAL** | Controla un robot submarino con motores continuos. Rodea rocas, recupera instrumentos y observa cómo el agua frena al soltar los motores. |
 
-En **Práctica libre**, el selector permite entrar a cualquiera de los seis circuitos sin desbloqueos y sin modificar los días completados. La aventura conserva el avance por reflexiones. Los nuevos circuitos permiten pausar con **P**, reiniciar y activar movimiento reducido; los fallos conservan los puntos. Cada reto guarda su mejor sesión localmente.
+![Travesía lunar: plataformas, astronauta y balizas](assets/games/travesia.png)
 
-Los circuitos son juegos simbólicos. **Abrir simulador original** conserva los modelos y procedimientos anteriores, con su ayuda específica. Desde el simulador se puede volver al circuito. El observatorio acuático funciona como un panel de comparación sin participación en buceo; la actividad original conserva sus restricciones.
+![Rescate submarino: robot, rocas e instrumentos](assets/games/abisal.png)
+
+**Práctica libre** permite probar los seis juegos sin modificar el avance de la aventura. Los cinco juegos nuevos incluyen pausa con **P**, controles táctiles, récord local y reinicio. El movimiento reducido detiene los adornos animados y conserva el movimiento necesario para jugar. Los simuladores originales siguen disponibles desde cada juego y mantienen sus modelos y procedimientos. El rescate submarino usa un robot remoto, sin participación en buceo.
 
 ### Sesión PULSO
 
@@ -94,7 +94,7 @@ Para las pruebas de interacción:
 ```sh
 npm ci
 npm run test:interaction
-npm run test:circuits
+npm run test:games
 ```
 
 Estas comprobaciones verifican el software, no un aparato real ni la aptitud de una persona. [Detalles técnicos y límites →](docs/GUIA.md#la-ciencia-se-comprueba)

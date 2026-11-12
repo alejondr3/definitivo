@@ -125,3 +125,22 @@ Los aciertos encadenan flujo. Un paquete incorrecto reinicia ese flujo, pero no 
 Jugar circuito PULSO abre una práctica rápida, sin modificar los días completados. En la ruta del campamento, la misión y sus cinco preguntas sí forman parte del día 4. La base rítmica es original, opcional, funciona sin conexión y añade percusión, bajo y acordes sintetizados en el dispositivo.
 
 El MAT pide tres señales de eje por ronda con un ciclo tranquilo de respiración de ocho segundos. No se acelera la respiración para seguir la música. Sus anillos se muestran ahora como superficies sólidas sombreadas. Ingeniería ofrece Probar diseño ahora para registrar las fases preparatorias y pasar directamente al ensayo cualitativo.
+
+## Circuitos dinámicos en las seis tareas
+
+Las seis tareas usan ahora la presentación en perspectiva de PULSO. La práctica libre del campamento ofrece un selector con todos los circuitos; no modifica el progreso de la aventura. Los días de la aventura siguen desbloqueándose al cerrar las cinco preguntas de reflexión.
+
+En los cinco circuitos nuevos, A / S / D y los botones eligen carril. Espacio activa la acción del reto y P alterna pausa y continuación. El radar muestra las señales y el aviso **AHORA** indica la ventana de acción. Hay 5, 7 o 9 objetivos según el nivel. No hay límite de tiempo y los errores mantienen los puntos ganados.
+
+- **Ejes:** elige cabeceo, alabeo o guiñada según la orden y confirma cerca de la captura.
+- **Luna:** elige la baliza y salta cuando aparezca AHORA. El salto es una regla de arcade; el modelo del arnés está en el simulador original.
+- **5DF:** los botones laterales añaden impulsos. El opuesto contrarresta el movimiento. S, B, espacio o Frenar aplican una ayuda explícita que cancela la velocidad lateral. Llega al carril solicitado con velocidad baja; la telemetría muestra posición y velocidad. Es una tarea lateral simbólica, no el modelo completo de cinco grados de libertad.
+- **PULSO:** conserva repetición, confirmación y recogida de paquetes, con R y C para el diálogo.
+- **Ingeniería:** prueba primero el modelo desigual, lee el fallo, elige un diseño simétrico y repite el ensayo en la ventana de captura. Son reglas cualitativas.
+- **Agua:** observa desde el panel los marcadores con el mismo impulso. Tras observar la diferencia, regístrala y elige ARRASTRE. Esta actividad no representa buceo.
+
+**Abrir simulador original** permite explorar los modelos anteriores con sus controles y ayuda. **Volver al circuito dinámico** inicia un nuevo intento del circuito. Ambos modos comparten la reflexión del día. Cambiar de modo o reiniciar conserva los récords, pero inicia la puntuación del intento en cero.
+
+El botón de movimiento fija la perspectiva cuando se elige movimiento reducido: el radar y los avisos siguen permitiendo jugar. La música es opcional. Avisar malestar detiene la animación y permite continuar con la reflexión sin perder el progreso de la aventura.
+
+Verificación de los circuitos: `npm run test:circuits`. Las pruebas completan los cinco juegos nuevos, comprueban fallos, reinicios, pausa por teclado, detención y conservación del progreso. Las pruebas anteriores siguen recorriendo los simuladores originales y PULSO.

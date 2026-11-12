@@ -24,9 +24,28 @@
 
 <p align="center"><sub>Escenas renderizadas con el código del juego. Modelos educativos idealizados.</sub></p>
 
-### Nuevo: sesión PULSO
+### Nuevo: seis circuitos en perspectiva
 
-Avanza por un circuito de datos en perspectiva. Repite y confirma las órdenes sobre la escena, cambia de carril y recoge el paquete solicitado. Encadena aciertos mientras el escenario continúa avanzando. En **Práctica rápida** puedes entrar directamente, sin alterar los días completados.
+![Observatorio de arrastre con radar, controles y circuito en perspectiva](assets/circuitos-perspectiva.png)
+
+El estilo de PULSO se extiende a todos los días. Cinco juegos nuevos comparten el escenario en perspectiva, el radar, las rachas y los controles de teclado y pantalla:
+
+| Reto | Mecánica del circuito |
+| --- | --- |
+| Atención en tres ejes | Reconocer cabeceo, alabeo y guiñada y confirmar la señal solicitada. |
+| Ruta lunar | Elegir la baliza y saltar al aparecer **AHORA**. |
+| Entrega 5DF | Aplicar impulsos laterales, contrarrestarlos y llegar con velocidad baja. |
+| PULSO | Repetir, confirmar y ejecutar órdenes recogiendo paquetes. |
+| Ingeniería | Registrar el primer ensayo inclinado, elegir simetría y probar la mejora. |
+| Observatorio de agua | Comparar dos marcadores con el mismo impulso y registrar el arrastre, sin buceo. |
+
+En **Práctica libre**, el selector permite entrar a cualquiera de los seis circuitos sin desbloqueos y sin modificar los días completados. La aventura conserva el avance por reflexiones. Los nuevos circuitos permiten pausar con **P**, reiniciar y activar movimiento reducido; los fallos conservan los puntos. Cada reto guarda su mejor sesión localmente.
+
+Los circuitos son juegos simbólicos. **Abrir simulador original** conserva los modelos y procedimientos anteriores, con su ayuda específica. Desde el simulador se puede volver al circuito. El observatorio acuático funciona como un panel de comparación sin participación en buceo; la actividad original conserva sus restricciones.
+
+### Sesión PULSO
+
+Avanza por un circuito de datos en perspectiva. Repite y confirma las órdenes sobre la escena, cambia de carril y recoge el paquete solicitado. Encadena aciertos mientras el escenario continúa avanzando. En **Práctica libre**, selecciona el reto 04 para entrar directamente, sin alterar los días completados.
 
 Activa **Base rítmica** para escuchar percusión y bajo originales sintetizados en el navegador. El audio es opcional y se detiene al pausar o avisar malestar. La respiración y la física de los aparatos mantienen sus reglas.
 
@@ -75,6 +94,7 @@ Para las pruebas de interacción:
 ```sh
 npm ci
 npm run test:interaction
+npm run test:circuits
 ```
 
 Estas comprobaciones verifican el software, no un aparato real ni la aptitud de una persona. [Detalles técnicos y límites →](docs/GUIA.md#la-ciencia-se-comprueba)

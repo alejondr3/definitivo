@@ -5,7 +5,8 @@
   "description": "Juego educativo offline en un HTML, renders 3D propios y circuito de datos en perspectiva.",
   "scripts": {
     "test": "node --test tests/physics.test.cjs tests/audio.test.cjs",
-    "test:interaction": "node tests/interactions.cjs"
+    "test:interaction": "node tests/interactions.cjs",
+    "test:circuits": "node tests/circuits.cjs"
   },
   "devDependencies": {
     "jsdom": "26.1.0"
